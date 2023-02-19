@@ -72,4 +72,19 @@ final class EntityTests: XCTestCase {
         
         XCTAssertEqual(entity.jobs[0].buildTime, 1)
     }
+    
+    func testMeetingRequirementsConsumesItems() {
+            let world = World()
+            let requiredItem = Item(name: "REQUIRED ITEM")
+            let entity = Entity(name: "Example Entity", position: .zero)
+            let job = Job(jobGoal: .changeTile(.Wall), targetPosition: .zero, buildTime: 1, requirements: [.items(itemStack: ItemStack(item: requiredItem, amount: 1))])
+            entity.jobs.push(job)
+            
+            world.setTile(position: .zero, tile: .Floor)
+            entity.inventory = [requiredItem: 10]
+
+            XCTAssertEqual(entity.inventory[requiredItem, default: 0], 10)
+            entity.update(in: world)
+            XCTAssertEqual(entity.inventory[requiredItem, default: 0], 9)
+        }
 }

@@ -10,6 +10,7 @@
 		D6D3E79629A26BB700801E33 /* EntitySpriteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D3E79529A26BB700801E33 /* EntitySpriteManager.swift */; };
 		D6D3E79829A26BFA00801E33 /* SpriteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D3E79729A26BFA00801E33 /* SpriteManager.swift */; };
 		D6D3E79A29A26C1E00801E33 /* TileSpriteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D3E79929A26C1E00801E33 /* TileSpriteManager.swift */; };
+		D6D3E79C29A26D1F00801E33 /* JobTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D3E79B29A26D1F00801E33 /* JobTests.swift */; };
 		D6E322D329995087000DC7E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E322D229995087000DC7E7 /* AppDelegate.swift */; };
 		D6E322D929995087000DC7E7 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E322D829995087000DC7E7 /* GameScene.swift */; };
 		D6E322DB29995087000DC7E7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E322DA29995087000DC7E7 /* ViewController.swift */; };
@@ -54,6 +55,7 @@
 		D6D3E79529A26BB700801E33 /* EntitySpriteManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntitySpriteManager.swift; sourceTree = "<group>"; };
 		D6D3E79729A26BFA00801E33 /* SpriteManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpriteManager.swift; sourceTree = "<group>"; };
 		D6D3E79929A26C1E00801E33 /* TileSpriteManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TileSpriteManager.swift; sourceTree = "<group>"; };
+		D6D3E79B29A26D1F00801E33 /* JobTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobTests.swift; sourceTree = "<group>"; };
 		D6E322CF29995087000DC7E7 /* JobzForJuniorz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JobzForJuniorz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6E322D229995087000DC7E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D6E322D829995087000DC7E7 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
@@ -159,6 +161,7 @@
 				D6E3231329996174000DC7E7 /* EntityTests.swift */,
 				D6E3231529996665000DC7E7 /* WorldTests.swift */,
 				D6E323192999B822000DC7E7 /* RequirementTests.swift */,
+				D6D3E79B29A26D1F00801E33 /* JobTests.swift */,
 			);
 			path = JobzForJuniorzTests;
 			sourceTree = "<group>";
@@ -350,6 +353,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D6E3231629996665000DC7E7 /* WorldTests.swift in Sources */,
+				D6D3E79C29A26D1F00801E33 /* JobTests.swift in Sources */,
 				D6E3231A2999B822000DC7E7 /* RequirementTests.swift in Sources */,
 				D6E3231429996174000DC7E7 /* EntityTests.swift in Sources */,
 				D6E322EB29995089000DC7E7 /* JobzForJuniorzTests.swift in Sources */,
