@@ -6,59 +6,49 @@
 //
 
 import SpriteKit
-import GameplayKit
 
 class GameScene: SKScene {
+    static let CELL_SIZE: CGFloat = 16
     
-    private var label : SKLabelNode?
-    private var spinnyNode : SKShapeNode?
+    let world = World.makeDemoWorld()
+    
+    // Gameloop
+    var lastUpdateTime: TimeInterval = 0.0
+    let updateInterval: TimeInterval = 0.25
+    var remainingUpdateDelay: TimeInterval = 0.0
+    
+    // Sprite Managers
+    let tileSpriteManager = TileSpriteManager(cellSize: CELL_SIZE, zPosition: 0)
+    let entitySpriteManager = EntityTileSpriteManager(cellSize: CELL_SIZE, zPosition: 0.5)
+    
+    // Some nodes
+    var cameraNode: SKCameraNode!
     
     override func didMove(to view: SKView) {
+        cameraNode = SKCameraNode()
+        cameraNode.position = CGPoint.zero
+        // cameraNode.setScale(cameraScale)
+        camera = cameraNode
         
-        // Get label node from scene and store it for use later
-        self.label = self.childNode(withName: "//helloLabel") as? SKLabelNode
-        if let label = self.label {
-            label.alpha = 0.0
-            label.run(SKAction.fadeIn(withDuration: 2.0))
-        }
-        
-        // Create shape node to use during mouse interaction
-        let w = (self.size.width + self.size.height) * 0.05
-        self.spinnyNode = SKShapeNode.init(rectOf: CGSize.init(width: w, height: w), cornerRadius: w * 0.3)
-        
-        if let spinnyNode = self.spinnyNode {
-            spinnyNode.lineWidth = 2.5
-            
-            spinnyNode.run(SKAction.repeatForever(SKAction.rotate(byAngle: CGFloat(Double.pi), duration: 1)))
-            spinnyNode.run(SKAction.sequence([SKAction.wait(forDuration: 0.5),
-                                              SKAction.fadeOut(withDuration: 0.5),
-                                              SKAction.removeFromParent()]))
-        }
+        redraw()
+    }
+    
+    func redraw() {
+        tileSpriteManager.redraw(world: world, in: self)
+        entitySpriteManager.redraw(world: world, in: self)
     }
     
     
     func touchDown(atPoint pos : CGPoint) {
-        if let n = self.spinnyNode?.copy() as! SKShapeNode? {
-            n.position = pos
-            n.strokeColor = SKColor.green
-            self.addChild(n)
-        }
+        
     }
     
     func touchMoved(toPoint pos : CGPoint) {
-        if let n = self.spinnyNode?.copy() as! SKShapeNode? {
-            n.position = pos
-            n.strokeColor = SKColor.blue
-            self.addChild(n)
-        }
+        
     }
     
     func touchUp(atPoint pos : CGPoint) {
-        if let n = self.spinnyNode?.copy() as! SKShapeNode? {
-            n.position = pos
-            n.strokeColor = SKColor.red
-            self.addChild(n)
-        }
+        
     }
     
     override func mouseDown(with event: NSEvent) {
@@ -75,10 +65,7 @@ class GameScene: SKScene {
     
     override func keyDown(with event: NSEvent) {
         switch event.keyCode {
-        case 0x31:
-            if let label = self.label {
-                label.run(SKAction.init(named: "Pulse")!, withKey: "fadeInOut")
-            }
+        
         default:
             print("keyDown: \(event.characters!) keyCode: \(event.keyCode)")
         }
@@ -87,5 +74,15 @@ class GameScene: SKScene {
     
     override func update(_ currentTime: TimeInterval) {
         // Called before each frame is rendered
+        let deltaTime = currentTime - lastUpdateTime
+        lastUpdateTime = currentTime
+        remainingUpdateDelay -= deltaTime
+        
+        if remainingUpdateDelay <= 0 {
+            remainingUpdateDelay = updateInterval
+            world.update()
+            
+            redraw()
+        }
     }
 }

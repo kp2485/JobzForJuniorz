@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D6D3E79629A26BB700801E33 /* EntitySpriteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D3E79529A26BB700801E33 /* EntitySpriteManager.swift */; };
+		D6D3E79829A26BFA00801E33 /* SpriteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D3E79729A26BFA00801E33 /* SpriteManager.swift */; };
+		D6D3E79A29A26C1E00801E33 /* TileSpriteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D3E79929A26C1E00801E33 /* TileSpriteManager.swift */; };
 		D6E322D329995087000DC7E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E322D229995087000DC7E7 /* AppDelegate.swift */; };
-		D6E322D529995087000DC7E7 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = D6E322D429995087000DC7E7 /* GameScene.sks */; };
-		D6E322D729995087000DC7E7 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = D6E322D629995087000DC7E7 /* Actions.sks */; };
 		D6E322D929995087000DC7E7 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E322D829995087000DC7E7 /* GameScene.swift */; };
 		D6E322DB29995087000DC7E7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E322DA29995087000DC7E7 /* ViewController.swift */; };
 		D6E322DD29995089000DC7E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6E322DC29995089000DC7E7 /* Assets.xcassets */; };
@@ -17,6 +18,19 @@
 		D6E322EB29995089000DC7E7 /* JobzForJuniorzTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E322EA29995089000DC7E7 /* JobzForJuniorzTests.swift */; };
 		D6E322F529995089000DC7E7 /* JobzForJuniorzUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E322F429995089000DC7E7 /* JobzForJuniorzUITests.swift */; };
 		D6E322F729995089000DC7E7 /* JobzForJuniorzUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E322F629995089000DC7E7 /* JobzForJuniorzUITestsLaunchTests.swift */; };
+		D6E32305299951F8000DC7E7 /* Tile.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E32304299951F8000DC7E7 /* Tile.swift */; };
+		D6E323072999526F000DC7E7 /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E323062999526F000DC7E7 /* Entity.swift */; };
+		D6E3230A299952C2000DC7E7 /* Vector.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E32309299952C2000DC7E7 /* Vector.swift */; };
+		D6E3230C29995480000DC7E7 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E3230B29995480000DC7E7 /* Stack.swift */; };
+		D6E3230E29995752000DC7E7 /* Job.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E3230D29995752000DC7E7 /* Job.swift */; };
+		D6E323102999584C000DC7E7 /* World.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E3230F2999584C000DC7E7 /* World.swift */; };
+		D6E3231229995942000DC7E7 /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E3231129995942000DC7E7 /* Queue.swift */; };
+		D6E3231429996174000DC7E7 /* EntityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E3231329996174000DC7E7 /* EntityTests.swift */; };
+		D6E3231629996665000DC7E7 /* WorldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E3231529996665000DC7E7 /* WorldTests.swift */; };
+		D6E3231829997620000DC7E7 /* Requirement.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E3231729997620000DC7E7 /* Requirement.swift */; };
+		D6E3231A2999B822000DC7E7 /* RequirementTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E323192999B822000DC7E7 /* RequirementTests.swift */; };
+		D6E3231C2999BDFC000DC7E7 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E3231B2999BDFC000DC7E7 /* Item.swift */; };
+		D6E3231E2999BE34000DC7E7 /* ItemStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E3231D2999BE34000DC7E7 /* ItemStack.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,10 +51,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D6D3E79529A26BB700801E33 /* EntitySpriteManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntitySpriteManager.swift; sourceTree = "<group>"; };
+		D6D3E79729A26BFA00801E33 /* SpriteManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpriteManager.swift; sourceTree = "<group>"; };
+		D6D3E79929A26C1E00801E33 /* TileSpriteManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TileSpriteManager.swift; sourceTree = "<group>"; };
 		D6E322CF29995087000DC7E7 /* JobzForJuniorz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JobzForJuniorz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6E322D229995087000DC7E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D6E322D429995087000DC7E7 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
-		D6E322D629995087000DC7E7 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
 		D6E322D829995087000DC7E7 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		D6E322DA29995087000DC7E7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D6E322DC29995089000DC7E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +66,19 @@
 		D6E322F029995089000DC7E7 /* JobzForJuniorzUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JobzForJuniorzUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6E322F429995089000DC7E7 /* JobzForJuniorzUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobzForJuniorzUITests.swift; sourceTree = "<group>"; };
 		D6E322F629995089000DC7E7 /* JobzForJuniorzUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobzForJuniorzUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D6E32304299951F8000DC7E7 /* Tile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tile.swift; sourceTree = "<group>"; };
+		D6E323062999526F000DC7E7 /* Entity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
+		D6E32309299952C2000DC7E7 /* Vector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vector.swift; sourceTree = "<group>"; };
+		D6E3230B29995480000DC7E7 /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
+		D6E3230D29995752000DC7E7 /* Job.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Job.swift; sourceTree = "<group>"; };
+		D6E3230F2999584C000DC7E7 /* World.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = World.swift; sourceTree = "<group>"; };
+		D6E3231129995942000DC7E7 /* Queue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
+		D6E3231329996174000DC7E7 /* EntityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntityTests.swift; sourceTree = "<group>"; };
+		D6E3231529996665000DC7E7 /* WorldTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldTests.swift; sourceTree = "<group>"; };
+		D6E3231729997620000DC7E7 /* Requirement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Requirement.swift; sourceTree = "<group>"; };
+		D6E323192999B822000DC7E7 /* RequirementTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequirementTests.swift; sourceTree = "<group>"; };
+		D6E3231B2999BDFC000DC7E7 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		D6E3231D2999BE34000DC7E7 /* ItemStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemStack.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +106,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D6D3E79429A26B7000801E33 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D6D3E79529A26BB700801E33 /* EntitySpriteManager.swift */,
+				D6D3E79729A26BFA00801E33 /* SpriteManager.swift */,
+				D6D3E79929A26C1E00801E33 /* TileSpriteManager.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		D6E322C629995087000DC7E7 = {
 			isa = PBXGroup;
 			children = (
@@ -102,8 +140,9 @@
 			isa = PBXGroup;
 			children = (
 				D6E322D229995087000DC7E7 /* AppDelegate.swift */,
-				D6E322D429995087000DC7E7 /* GameScene.sks */,
-				D6E322D629995087000DC7E7 /* Actions.sks */,
+				D6D3E79429A26B7000801E33 /* View */,
+				D6E32303299951E8000DC7E7 /* Model */,
+				D6E32308299952B6000DC7E7 /* Utils */,
 				D6E322D829995087000DC7E7 /* GameScene.swift */,
 				D6E322DA29995087000DC7E7 /* ViewController.swift */,
 				D6E322DC29995089000DC7E7 /* Assets.xcassets */,
@@ -117,6 +156,9 @@
 			isa = PBXGroup;
 			children = (
 				D6E322EA29995089000DC7E7 /* JobzForJuniorzTests.swift */,
+				D6E3231329996174000DC7E7 /* EntityTests.swift */,
+				D6E3231529996665000DC7E7 /* WorldTests.swift */,
+				D6E323192999B822000DC7E7 /* RequirementTests.swift */,
 			);
 			path = JobzForJuniorzTests;
 			sourceTree = "<group>";
@@ -128,6 +170,30 @@
 				D6E322F629995089000DC7E7 /* JobzForJuniorzUITestsLaunchTests.swift */,
 			);
 			path = JobzForJuniorzUITests;
+			sourceTree = "<group>";
+		};
+		D6E32303299951E8000DC7E7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D6E32304299951F8000DC7E7 /* Tile.swift */,
+				D6E323062999526F000DC7E7 /* Entity.swift */,
+				D6E3230D29995752000DC7E7 /* Job.swift */,
+				D6E3230F2999584C000DC7E7 /* World.swift */,
+				D6E3231729997620000DC7E7 /* Requirement.swift */,
+				D6E3231B2999BDFC000DC7E7 /* Item.swift */,
+				D6E3231D2999BE34000DC7E7 /* ItemStack.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D6E32308299952B6000DC7E7 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				D6E32309299952C2000DC7E7 /* Vector.swift */,
+				D6E3230B29995480000DC7E7 /* Stack.swift */,
+				D6E3231129995942000DC7E7 /* Queue.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,9 +300,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D6E322D529995087000DC7E7 /* GameScene.sks in Resources */,
 				D6E322DD29995089000DC7E7 /* Assets.xcassets in Resources */,
-				D6E322D729995087000DC7E7 /* Actions.sks in Resources */,
 				D6E322E029995089000DC7E7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -262,9 +326,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6E323102999584C000DC7E7 /* World.swift in Sources */,
+				D6D3E79629A26BB700801E33 /* EntitySpriteManager.swift in Sources */,
+				D6D3E79A29A26C1E00801E33 /* TileSpriteManager.swift in Sources */,
 				D6E322DB29995087000DC7E7 /* ViewController.swift in Sources */,
+				D6E323072999526F000DC7E7 /* Entity.swift in Sources */,
+				D6E3230C29995480000DC7E7 /* Stack.swift in Sources */,
+				D6E3231C2999BDFC000DC7E7 /* Item.swift in Sources */,
+				D6D3E79829A26BFA00801E33 /* SpriteManager.swift in Sources */,
+				D6E3231E2999BE34000DC7E7 /* ItemStack.swift in Sources */,
+				D6E3231829997620000DC7E7 /* Requirement.swift in Sources */,
 				D6E322D929995087000DC7E7 /* GameScene.swift in Sources */,
+				D6E3231229995942000DC7E7 /* Queue.swift in Sources */,
 				D6E322D329995087000DC7E7 /* AppDelegate.swift in Sources */,
+				D6E3230A299952C2000DC7E7 /* Vector.swift in Sources */,
+				D6E32305299951F8000DC7E7 /* Tile.swift in Sources */,
+				D6E3230E29995752000DC7E7 /* Job.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +349,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6E3231629996665000DC7E7 /* WorldTests.swift in Sources */,
+				D6E3231A2999B822000DC7E7 /* RequirementTests.swift in Sources */,
+				D6E3231429996174000DC7E7 /* EntityTests.swift in Sources */,
 				D6E322EB29995089000DC7E7 /* JobzForJuniorzTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

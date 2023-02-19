@@ -7,6 +7,9 @@
 
 
 import Cocoa
+import OSLog
+
+let logger = Logger(subsystem: "com.LinwoodTechnologies.JobzForJuniorz", category: "Base Builder")
 
 @main
 class AppDelegate: NSObject, NSApplicationDelegate {
